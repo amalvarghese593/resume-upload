@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container label {
+  font-size: 18px;
+  font-weight: 500;
+}

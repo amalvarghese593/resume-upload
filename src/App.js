@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ReviewForm } from "./components/ReviewForm";
+import { Route, Routes } from "react-router-dom";
+import { Review } from "./components/Review";
+import { ResumeUpload } from "./components/ResumeUpload";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<ResumeUpload />} />
+        <Route path="/form" element={<ReviewForm />} />
+        <Route path="/review" element={<Review />} />
+      </Routes>
     </div>
   );
 }
